@@ -1,0 +1,8 @@
+Options -Indexes
+
+RewriteEngine on
+
+RewriteRule ^downloads/last$ downloads/last/
+RewriteRule ^downloads/last/$ downloads/box.php?last=true
+                                           
+RewriteRule ^downloads/$ http://localhost/davidsclouds/index.php?downloads=true [r]
